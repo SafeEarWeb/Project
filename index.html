@@ -1987,9 +1987,17 @@
           <td>
             <h4>
               <span class="author-block">
-                <a href="#" style="color: #0b0b0b">Xinfeng Li, Kai Li, Yifan Zheng, Chen Yan, Xiaoyu Ji, Wenyuan
-                  Xu</a></span>
-              <a href="#" style="color: #0b0b0b">Zhejiang University, Tsinghua University</a></span>
+                <a href="https://letterligo.github.io" style="color: #0b0b0b">Xinfeng Li</a>,
+                <a href="https://cslikai.cn/" style="color: #0b0b0b">Kai Li</a>,
+                <a href="#" style="color: #0b0b0b">Yifan Zheng</a>,
+                <a href="#" style="color: #0b0b0b">Chen Yan</a>,
+                <a href="#" style="color: #0b0b0b">Xiaoyu Ji</a>,
+                <a href="#" style="color: #0b0b0b">Wenyuan Xu</a>
+              </span>
+              <span class="author-block">
+                <a href="#" style="color: #0b0b0b">Zhejiang University</a>,
+                <a href="#" style="color: #0b0b0b">Tsinghua University</a>
+              </span>
             </h4>
           </td>
         </tr>
@@ -2017,8 +2025,9 @@
           </svg>&nbsp;&nbsp;Code</a> &nbsp;
         </a>
         <a href="https://zenodo.org/records/11124319" class="btn"><img class="svg-inline--fa fa-github fa-w-16"
-          style="width: 20px; height: 20px;" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github"
-          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 484 500" data-fa-i2svg="" src="./files/download.png">
+            style="width: 20px; height: 20px;" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github"
+            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 484 500" data-fa-i2svg=""
+            src="./files/download.png">
           &nbsp;&nbsp;CVoiceFake Dataset</a> &nbsp;
         </a>
         <div class="links" style="margin-top: auto;">
@@ -2034,7 +2043,11 @@
     <!-- <div class="figure" style="height: 224px; background-image: url(figures/teaser.png); margin-top: 20px;"></div> -->
     <!-- ？<p class="abstract"> -->
     <p class="abstract">
-      Text-to-Speech (TTS) and Voice Conversion (VC) models have exhibited remarkable performance in generating realistic and natural audio. However, their dark side, audio deepfake poses a significant threat to both society and individuals. Existing countermeasures largely focus on determining the genuineness of speech based on complete original audio recordings, which however often contain private content. This oversight may refrain deepfake detection from many applications, particularly in scenarios involving sensitive information like business secrets. 
+      Text-to-Speech (TTS) and Voice Conversion (VC) models have exhibited remarkable performance in generating
+      realistic and natural audio. However, their dark side, audio deepfake poses a significant threat to both society
+      and individuals. Existing countermeasures largely focus on determining the genuineness of speech based on complete
+      original audio recordings, which however often contain private content. This oversight may refrain deepfake
+      detection from many applications, particularly in scenarios involving sensitive information like business secrets.
     </p>
     <div style="display: flex; justify-content: center;">
       <img src="figures/Fig1.jpg" alt="Abstract" style="width: 40%">
@@ -2043,10 +2056,21 @@
 
   </div>
   <p class="abstract">
-    In this paper, we propose SafeEar, a novel framework that aims to detect deepfake audios without relying on accessing the speech content within. Our key idea is to devise a neural audio codec into a novel decoupling model that well separates the semantic and acoustic information from audio samples, and only use the acoustic information (e.g., prosody and timbre) for deepfake detection. In this way, no semantic content will be exposed to the detector. To overcome the challenge of identifying diverse deepfake audio without semantic clues, we enhance our deepfake detector with real-world codec augmentation. Extensive experiments conducted on four benchmark datasets demonstrate SafeEar’s effectiveness in detecting various deepfake techniques with an equal error rate (EER) down to <span style="font-weight: bold;">2.02%</span>. Simultaneously, it shields five-language speech content from being deciphered by both machine and human auditory analysis, demonstrated by word error rates (WERs) all above <span style="font-weight: bold;">93.93%</span> and our <span class="wavy-underline">user study</span>. Furthermore, our benchmark constructed for anti-deepfake and anti-content recovery evaluation helps provide a basis for future research in the realms of audio privacy preservation and deepfake detection.
+    In this paper, we propose SafeEar, a novel framework that aims to detect deepfake audios without relying on
+    accessing the speech content within. Our key idea is to devise a neural audio codec into a novel decoupling model
+    that well separates the semantic and acoustic information from audio samples, and only use the acoustic information
+    (e.g., prosody and timbre) for deepfake detection. In this way, no semantic content will be exposed to the detector.
+    To overcome the challenge of identifying diverse deepfake audio without semantic clues, we enhance our deepfake
+    detector with real-world codec augmentation. Extensive experiments conducted on four benchmark datasets demonstrate
+    SafeEar’s effectiveness in detecting various deepfake techniques with an equal error rate (EER) down to <span
+      style="font-weight: bold;">2.02%</span>. Simultaneously, it shields five-language speech content from being
+    deciphered by both machine and human auditory analysis, demonstrated by word error rates (WERs) all above <span
+      style="font-weight: bold;">93.93%</span> and our <span class="wavy-underline">user study</span>. Furthermore, our
+    benchmark constructed for anti-deepfake and anti-content recovery evaluation helps provide a basis for future
+    research in the realms of audio privacy preservation and deepfake detection.
   </p>
 
-  
+
   <div>
     <h2 style="color: #f1c432;">Our Pipeline</h2>
   </div>
